@@ -1,0 +1,27 @@
+
+/* overwrite hover colour  */
+.custom-day a:hover {
+    color: #185a9d;
+    text-decoration: underline;
+}
+
+.custom-day ul.icons li a:hover {
+    border-color: #185a9d;
+}
+
+.custom-day ul.icons li a:hover:before {
+    text-shadow: 1.25px 0px 0px #185a9d, -1.25px 0px 0px #185a9d, 0px 1.25px 0px #185a9d, 0px -1.25px 0px #185a9d;
+}
+
+/* overwrite background gradient */ 
+.custom-day {
+    background-image: linear-gradient(
+        20deg,
+        rgba(195, 240, 200, 0.8) 30%,
+        rgba(24, 90, 157, 0.8)
+    );
+}
+
+.custom-day .copyright {
+    color:  #313f47;
+}
