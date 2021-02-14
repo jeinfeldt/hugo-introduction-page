@@ -6,16 +6,21 @@ I chose [Hugo](https://gohugo.io/).
 
 <img src="readme.png" alt="drawing" style="width:200px;"/>
 
+***
+
+<img src="readme-night.png" alt="drawing" style="width:200px;"/>
+
+
 I wrote a small personal introduction card with randomly
 selected job position titles, taken from a [Silicon Valley
 Job Title Generator](https://siliconvalleyjobtitlegenerator.tumblr.com/).
-Theme is [hugo-identity-theme](https://themes.gohugo.io/hugo-identity-theme/).
+Base theme is [hugo-identity-theme](https://themes.gohugo.io/hugo-identity-theme/). 
 
 # Motivation
 Well, as of writing this, it is like -5° celcius. Plus a pandemic going on.
 So, not many alternatives of leisure time activities.
 
-Plus, I stumbled upon the websites of @kantholtz ([here](https://ramlimit.de/)) and @tderleth ([here](https://thomasderleth.de/)) and want to be part of the club!
+Plus, I stumbled upon the websites of [@kantholtz](https://kantholtz.de/) and [@tderleth](https://thomasderleth.de/) and want to be part of the club!
 
 # Running
 Get yourself Hugo
