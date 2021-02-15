@@ -5,7 +5,14 @@
 **/
 var NIGHTMODE = function() {
 
+    let storageKey = "mode";
+
     function init() {
+        // evaluate persisted state
+        if (localStorage.getItem(storageKey)) {
+            toggle();
+        }
+        // add events
         document.querySelectorAll(".custom-night-mode-toggle").forEach(function(node) {
             node.addEventListener ('touchstart', toggle);
             node.addEventListener ('click', toggle);
@@ -13,7 +20,9 @@ var NIGHTMODE = function() {
     }
 
     function toggle(event) {
-        event.preventDefault();
+        if (event) {
+            event.preventDefault();
+        }
         let body = document.getElementsByTagName("body")[0]
         let toggles =  document.querySelectorAll(".custom-night-mode-toggle")
         // if day, switch to night  
@@ -27,6 +36,8 @@ var NIGHTMODE = function() {
             document.querySelectorAll(".custom-avatar").forEach(function(node) {
                 node.src = "images/avatars/nightmode.png";
             });
+            // store in session
+            localStorage.setItem(storageKey, "custom-night");
             return
         }
         // toggle other way arounds
@@ -38,6 +49,8 @@ var NIGHTMODE = function() {
         document.querySelectorAll(".custom-avatar").forEach(function(node) {
             node.src = "images/avatars/daymode.png";
         });
+        // store in session
+        localStorage.clear();
     }
 
     //return an object that represents NIGHTMODE module
