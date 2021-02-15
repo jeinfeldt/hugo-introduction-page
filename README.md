@@ -36,7 +36,7 @@ hugo server -D
 * Deploy it somewhere (I want to have a look at [netlify](https://www.netlify.com/))
 * Make Positions swap based on a ticker instead of on reload
 * Store selected mode across page reloads in `localStorage`
-* Sprinkle in some animations
+* Sprinkle in some animations (e.g. wink in night mode)
 * Fill in social links
 * If motivation really hits provide a Dockerfile
 
