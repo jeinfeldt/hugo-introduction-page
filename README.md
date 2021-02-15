@@ -4,12 +4,11 @@ During a Sunday afternoon in quarantine I decided to give this whole
 [Jamstack](https://jamstack.org/) hype a try. As a static site generator
 I chose [Hugo](https://gohugo.io/).
 
-<img src="readme.png" alt="drawing" style="width:200px;"/>
+<img src="./docs/readme.png" alt="drawing" style="width:200px;"/>
 
 ***
 
-<img src="readme-night.png" alt="drawing" style="width:200px;"/>
-
+<img src="./docs/readme-night.png" alt="drawing" style="width:200px;"/>
 
 I wrote a small personal introduction card with randomly
 selected job position titles, taken from a [Silicon Valley
@@ -37,7 +36,6 @@ hugo server -D
 * Deploy it somewhere (I want to have a look at [netlify](https://www.netlify.com/))
 * Make Positions swap based on a ticker instead of on reload
 * Store selected mode across page reloads in `localStorage`
-* Create a dedicated night mode avatar
 * Sprinkle in some animations
 * Fill in social links
 * If motivation really hits provide a Dockerfile
