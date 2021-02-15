@@ -29,9 +29,16 @@ var POSITIONS = function() {
 
     function init() {
         swap();
+        document.querySelectorAll(".custom-position-toggle").forEach(function(node) {
+            node.addEventListener ('touchstart', swap);
+            node.addEventListener ('click', swap);
+        });
     }
 
-    function swap() {
+    function swap(event) {
+        if (event) {
+            event.preventDefault();
+        }
         let position = values[Math.floor(Math.random()*values.length)]
         document.querySelectorAll(".position").forEach(function(node) {
             node.innerHTML = position.toLowerCase()

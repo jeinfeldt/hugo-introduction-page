@@ -103,18 +103,6 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
     link = "https://github.com/jeinfeldt"
     target = "_blank"
 
-  [[params.social]]
-    title = "Blrg"
-    icon = "fa-pencil"
-    link = "https://github.com/jeinfeldt"
-    target = "_blank"
-
-  [[params.social]]
-    title = "CV"
-    icon = "fa-bank"
-    link = "https://github.com/jeinfeldt"
-    target = "_blank"
-
   # Footer settings
   [params.footer]
     # If copyright is not set, author is used
