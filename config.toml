@@ -27,7 +27,7 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
   #favicon_svg = "favicon.svg"
 
   # Link custom assets relative to /static
-  custom_js  = ["js/onload.js", "js/positions.js", "js/nightmode.js"]
+  custom_js  = ["js/anime.min.js", "js/animations.js", "js/onload.js", "js/positions.js", "js/nightmode.js"]
   custom_css = ["css/custom.css", "css/night.css", "css/day.css"]
 
   # Customization switches

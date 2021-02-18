@@ -7,4 +7,5 @@ window.onload = function() {
     // bootstrap modules
     POSITIONS.init();
     NIGHTMODE.init();
+    ANIMATIONS.init();
 };
