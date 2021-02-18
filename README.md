@@ -6,7 +6,7 @@ I chose [Hugo](https://gohugo.io/).
 
 <img src="./docs/readme.png" alt="drawing" style="width:200px;"/>
 
-***
+***    
 
 <img src="./docs/readme-night.png" alt="drawing" style="width:200px;"/>
 
@@ -35,9 +35,9 @@ hugo server -D
 # Open Tasks
 * Deploy it somewhere (I want to have a look at [netlify](https://www.netlify.com/))
 * Include frontend pipeline for assets
-* Sprinkle in some animations (e.g. wink in night mode, animejs)
-* Fill in social links
-* If motivation really hits provide a Dockerfile
+* Let someone with skills create nice avatars 
+* Fancy text animations with anime
+* Provide a Dockerfile
 
 # License
 WTFPL license <br>

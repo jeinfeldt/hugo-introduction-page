@@ -4,6 +4,8 @@
  * ANIMATIONS represents module to swap sprinkle some animations in the site
  **/
 var ANIMATIONS = function() {
+
+    // animation for interactive elements
     function init() {
         document.querySelectorAll(".custom-toggle").forEach(function(node) {
             let tmp = function(_) {
@@ -20,6 +22,7 @@ var ANIMATIONS = function() {
             node.addEventListener('touchstart', tmp);
         });
     }
+
     //return an object that represents ANIMATIONS module
     return {
         init: init,

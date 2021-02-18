@@ -6,6 +6,7 @@
 var NIGHTMODE = function() {
 
     let storageKey = "mode";
+    let winkInterval, winkTimeout;
 
     function init() {
         // evaluate persisted state
@@ -19,38 +20,61 @@ var NIGHTMODE = function() {
         });
     }
 
-    function toggle(event) {
-        if (event) {
-            event.preventDefault();
-        }
+    function initNight() {
         let body = document.getElementsByTagName("body")[0]
         let toggles = document.querySelectorAll(".custom-night-mode-toggle")
-            // if day, switch to night  
-        if (body.classList.contains("custom-day")) {
-            body.classList.replace("custom-day", "custom-night");
-            // update icon
-            toggles.forEach(function(node) {
-                node.classList.replace("fa-moon-o", "fa-sun-o")
-            });
-            // update image
-            document.querySelectorAll(".custom-avatar").forEach(function(node) {
-                node.src = "images/avatars/nightmode.png";
-            });
-            // store in session
-            localStorage.setItem(storageKey, "custom-night");
-            return
-        }
-        // toggle other way arounds
+        body.classList.replace("custom-day", "custom-night");
+        // update icon
+        toggles.forEach(function(node) {
+            node.classList.replace("fa-moon-o", "fa-sun-o")
+        });
+        // update image
+        AVATAR.setNight();
+        // store in session
+        localStorage.setItem(storageKey, "custom-night");
+        triggerWinkLoop();
+    }
+
+    function triggerWinkLoop() {
+        winkInterval = setInterval(function() {
+            AVATAR.setNightWink();
+            winkTimeout = setTimeout(function() {
+                AVATAR.setNight();
+            }, 2000);
+        }, 10000);
+    }
+
+    function stopWinkLoop() {
+        clearInterval(winkInterval);
+        clearTimeout(winkTimeout);
+    }
+
+    function initDay() {
+        stopWinkLoop();
+        let body = document.getElementsByTagName("body")[0]
+        let toggles = document.querySelectorAll(".custom-night-mode-toggle")
         body.classList.replace("custom-night", "custom-day");
         toggles.forEach(function(node) {
             node.classList.replace("fa-sun-o", "fa-moon-o")
         });
         // update image
-        document.querySelectorAll(".custom-avatar").forEach(function(node) {
-            node.src = "images/avatars/daymode.png";
-        });
+        AVATAR.setDay();
         // store in session
         localStorage.clear();
+    }
+
+    function toggle(event) {
+        if (event) {
+            event.preventDefault();
+        }
+        let body = document.getElementsByTagName("body")[0]
+            // if day, switch to night  
+        if (body.classList.contains("custom-day")) {
+            initNight();
+            return
+        }
+        // toggle other way arounds
+        initDay();
     }
 
     //return an object that represents NIGHTMODE module
