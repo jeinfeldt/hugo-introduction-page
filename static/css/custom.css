@@ -1,20 +1,25 @@
 /* overwrite typo */
+
 body {
     letter-spacing: 0.1em;
-}  
+}
 
 .position {
     text-transform: capitalize;
 }
 
+
 /* night mode toggle */
+
 .custom-night-mode-toggle-wrapper {
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
+
 /* overwrite avatar schadow */
+
 .custom-day #main .avatar img {
     box-shadow: 0 0 0 1.0em #ffffff;
 }

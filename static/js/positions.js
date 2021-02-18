@@ -1,14 +1,14 @@
 "use strict";
 
 /*
-* POSITIONS represents module to swap the positions present in the template
-**/
+ * POSITIONS represents module to swap the positions present in the template
+ **/
 var POSITIONS = function() {
     /*
-    * list of positions
-    * these are taken partly from:
-    * https://siliconvalleyjobtitlegenerator.tumblr.com/    
-    */
+     * list of positions
+     * these are taken partly from:
+     * https://siliconvalleyjobtitlegenerator.tumblr.com/    
+     */
     let values = [
         "DOING STUFF",
         "BRAND STORY CONNECTOR",
@@ -30,8 +30,8 @@ var POSITIONS = function() {
     function init() {
         swap();
         document.querySelectorAll(".custom-position-toggle").forEach(function(node) {
-            node.addEventListener ('touchstart', swap);
-            node.addEventListener ('click', swap);
+            node.addEventListener('touchstart', swap);
+            node.addEventListener('click', swap);
         });
     }
 
@@ -39,13 +39,13 @@ var POSITIONS = function() {
         if (event) {
             event.preventDefault();
         }
-        let position = values[Math.floor(Math.random()*values.length)]
+        let position = values[Math.floor(Math.random() * values.length)]
         document.querySelectorAll(".position").forEach(function(node) {
             node.innerHTML = position.toLowerCase()
         });
     }
     //return an object that represents POSITIONS module
     return {
-         init: init,
+        init: init,
     }
 }();

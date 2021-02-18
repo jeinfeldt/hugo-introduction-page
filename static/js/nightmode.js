@@ -1,8 +1,8 @@
 "use strict";
 
 /*
-* NIGHTMODE represents module to switch to dark mode
-**/
+ * NIGHTMODE represents module to switch to dark mode
+ **/
 var NIGHTMODE = function() {
 
     let storageKey = "mode";
@@ -14,8 +14,8 @@ var NIGHTMODE = function() {
         }
         // add events
         document.querySelectorAll(".custom-night-mode-toggle").forEach(function(node) {
-            node.addEventListener ('touchstart', toggle);
-            node.addEventListener ('click', toggle);
+            node.addEventListener('touchstart', toggle);
+            node.addEventListener('click', toggle);
         });
     }
 
@@ -24,8 +24,8 @@ var NIGHTMODE = function() {
             event.preventDefault();
         }
         let body = document.getElementsByTagName("body")[0]
-        let toggles =  document.querySelectorAll(".custom-night-mode-toggle")
-        // if day, switch to night  
+        let toggles = document.querySelectorAll(".custom-night-mode-toggle")
+            // if day, switch to night  
         if (body.classList.contains("custom-day")) {
             body.classList.replace("custom-day", "custom-night");
             // update icon
@@ -55,6 +55,6 @@ var NIGHTMODE = function() {
 
     //return an object that represents NIGHTMODE module
     return {
-         init: init,
+        init: init,
     }
 }();

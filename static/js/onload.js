@@ -1,8 +1,8 @@
 "use strict";
 
 /*
-* onload trigger position swap with randomely selected position
-*/
+ * onload trigger position swap with randomely selected position
+ */
 window.onload = function() {
     // bootstrap modules
     POSITIONS.init();
