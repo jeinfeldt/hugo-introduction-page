@@ -15,6 +15,8 @@ selected job position titles, taken from a [Silicon Valley
 Job Title Generator](https://siliconvalleyjobtitlegenerator.tumblr.com/).
 Base theme is [hugo-identity-theme](https://themes.gohugo.io/hugo-identity-theme/). 
 
+ Check the [site](https://hello.jeinfeldt.net).
+
 # Motivation
 Well, as of writing this, it is like -5° celcius. Plus a pandemic going on.
 So, not many alternatives of leisure time activities.
@@ -32,11 +34,18 @@ And run the local server
 hugo server -D
 ```
 
+# Deployment
+In general it is straighforward to deploy Jamstack projects,
+as the result is just static `html`, `js` and `css`.
+You basically just need a web server pointing at the files.
+
+Still, I wanted to give [Netlify](https://www.netlify.com/) a try as this seems the way to go with a Jamstack project.
+
+I linked my Github account and selected this repository, the site was live within five minutes. At a first glance Netlify seems pretty convenient for smaller projects and sites.
+
 # Open Tasks
-* Deploy it somewhere (I want to have a look at [netlify](https://www.netlify.com/))
 * Let someone with skills create nice avatars 
 * Fancy text animations with anime
-* Provide a Dockerfile
 
 # License
 WTFPL license <br>
