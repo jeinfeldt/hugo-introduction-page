@@ -5,6 +5,10 @@
  **/
 var NIGHTMODE = function() {
 
+    // in ms
+    const WINK_TIMEOUT = 2000;
+    const WINK_INTERVAL = 7000;
+
     let storageKey = "mode";
     let winkInterval, winkTimeout;
 
@@ -40,8 +44,8 @@ var NIGHTMODE = function() {
             AVATAR.setNightWink();
             winkTimeout = setTimeout(function() {
                 AVATAR.setNight();
-            }, 2000);
-        }, 10000);
+            }, WINK_TIMEOUT);
+        }, WINK_INTERVAL);
     }
 
     function stopWinkLoop() {
