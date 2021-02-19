@@ -34,7 +34,6 @@ hugo server -D
 
 # Open Tasks
 * Deploy it somewhere (I want to have a look at [netlify](https://www.netlify.com/))
-* Include frontend pipeline for assets
 * Let someone with skills create nice avatars 
 * Fancy text animations with anime
 * Provide a Dockerfile
